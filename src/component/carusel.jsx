@@ -1,82 +1,41 @@
-import React from "react";
+import React from 'react'
+import Carousel from 'react-bootstrap/Carousel'
+import oneImg from '../image/moto_1.jpg'
+import twoImg from '../image/moto_2.jpg'
+import theeImg from '../image/moto_3.jpg'
 
-const Carusel = () => {
-  const images_1 = "./image/imag_1.jpeg";
-  const images_2 = "./image/imag_2.jpeg";
-  const images_3 = "./image/imag_3.jpeg";
-
+const Slider = () => {
   return (
     <>
-      {/* <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
+      <Carousel>
+        <Carousel.Item style={{ height: '400px' }}>
+          <img className='d-block w-90' src={oneImg} alt='First slide' />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item style={{ height: '400px' }}>
+          <img className='d-block w-90' src={twoImg} alt='Second slide' />
 
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item style={{ height: '400px' }}>
+          <img className='d-block w-90' src={theeImg} alt='Third slide' />
 
-        <div className="carousel-inner">
-
-          <div className="carousel-item active" data-bs-interval="2000">
-            <img src="./image/imag_1.jpeg" className="d-block w-100" alt="no"/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Метка первого слайда</h5>
-              <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
-            </div>
-          </div>
-
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src="./image/imag_2.jpeg" className="d-block w-100" alt="no"/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Метка второго слайда</h5>
-              <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
-            </div>
-          </div>
-
-          <div className="carousel-item">
-            <img src="./image/imag_3.jpeg" className="d-block w-100" alt="no"/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Метка третьего слайда</h5>
-              <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
-            </div>
-          </div>
-
-        </div>
-
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Предыдущий</span>
-        </button>
-
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Следующий</span>
-        </button>
-        
-      </div> */}
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={images_1} className="d-block w-100" alt="no img"/>
-          </div>
-          <div className="carousel-item">
-            <img src={images_2} className="d-block w-100" alt="no img"/>
-          </div>
-          <div className="carousel-item">
-            <img src={images_3} className="d-block w-100" alt="no img"/>
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Предыдущий</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Следующий</span>
-        </button>
-      </div>
-  </>
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </>
   )
-};
+}
 
-export default Carusel;
+export default Slider
