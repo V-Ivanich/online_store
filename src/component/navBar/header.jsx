@@ -1,5 +1,5 @@
 import React from 'react'
-// import './header.module.scss'
+import styles from './header.module.scss'
 
 const Header = () => {
   return (
@@ -44,8 +44,8 @@ const Header = () => {
         </ul>
       </div>
 
-      <div className='container catalog'>
-        <ul className='nav'>
+      <div className={styles.catalog}>
+        <ul className={styles.navline}>
           <li className='nav-item'>
             <a className='nav-link active' aria-current='page' href='!#'>
               Квадроциклы
