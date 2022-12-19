@@ -1,7 +1,9 @@
-.catalog {
-  background-color: burlywood;
-  justify-self: center;
+.container {
+  max-width: 1171px;
+  margin: 5px auto;
 }
-.navline {
-  justify-content: center;
+.catalog {
+  height: 53px;
+  background-color: #F0F0F4;
+  justify-content: space-between;
 }
