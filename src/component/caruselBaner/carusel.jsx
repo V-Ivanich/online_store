@@ -1,8 +1,8 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import oneImg from '../image/moto_1.jpg'
-import twoImg from '../image/moto_2.jpg'
-import theeImg from '../image/moto_3.jpg'
+import oneImg from '../../image/moto_1.jpg'
+import twoImg from '../../image/moto_2.jpg'
+import theeImg from '../../image/moto_3.jpg'
 
 const Slider = () => {
   return (

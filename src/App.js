@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './component/header'
-import Slider from './component/carusel'
+import Header from './component/navBar/header'
+import Slider from './component/caruselBaner/carusel'
 
 function App() {
   return (
