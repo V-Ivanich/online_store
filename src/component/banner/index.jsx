@@ -10,8 +10,8 @@ export const Banner = () => {
       <Container className={styles.body_banner}>
         <Row>
           <Col>
-            <img src={moto_blue2} alt='no photo' />
-            <img src={moto_blue1} alt='no photo' />
+            <img src={moto_blue2} alt='no_photo' />
+            <img src={moto_blue1} alt='no_photo' />
           </Col>
           <Col>
             <p>CКИДКИ на все запчасти до 70%</p>
