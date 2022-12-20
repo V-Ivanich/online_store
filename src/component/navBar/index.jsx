@@ -11,7 +11,7 @@ export const Header = () => {
         <Row>
           <ul className='nav'>
             <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='!#'>
+              <a className='nav-link' aria-current='page' href='!#'>
                 Магазины
               </a>
             </li>

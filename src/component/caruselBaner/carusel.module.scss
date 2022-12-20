@@ -1,15 +1,20 @@
-.baner_carusel {
+.baner_carousel {
   display: flex;
-  max-width: 1171px;
+  padding: 0;
   margin: 5px auto;
 }
-.body_carusel {
-  max-width: 800px;
+.border_carousel {
+  overflow: hidden;
+  width: 74.36%;
+  max-height: 400px;
+  border-radius: 4px;
+}
+.body_carousel {
   max-height: 400px;
 }
 .baner {
-  width: 265px;
+  width: 22.65%;
   height: 397px;
   background-color: bisque;
-  margin-left: 36px;
+  margin-left: 2%;
 }
