@@ -8,6 +8,7 @@ import heart from '../../image/Heart.svg'
 import mens from '../../image/Mens.svg'
 import basket from '../../image/Basket.svg'
 import styles from './header.module.scss'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
   return (
@@ -15,28 +16,28 @@ export const Header = () => {
       <Container className={styles.container}>
         <Row className={styles.menu}>
           <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+            <Link className='nav-link' to='/shops'>
               Магазины
-            </a>
+            </Link>
           </Col>
           <Col>
-            <a className='nav-link' href='!#'>
+            <Link className='nav-link' to='/action'>
               Акции
-            </a>
+            </Link>
           </Col>
           <Col>
-            <a className='nav-link' href='/#'>
+            <Link className='nav-link' to='/case'>
               Доставка и оплата
-            </a>
+            </Link>
           </Col>
           <Col>
             <img src={logo} alt='noLogo' />
           </Col>
           <Col>
             <img src={maps} alt='noLogo' />
-            <a className='nav-link' href='!#'>
+            <Link className='nav-link' to='/map'>
               Москва,ул.Науки 25
-            </a>
+            </Link>
           </Col>
           <Col>
             <a className='nav-link' href='!#'>
@@ -67,9 +68,9 @@ export const Header = () => {
             </a>
           </Col>
           <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+            <Link className='nav-link' aria-current='page' to='/gidrocikle'>
               Гидроциклы
-            </a>
+            </Link>
           </Col>
           <Col>
             <a className='nav-link' aria-current='page' href='!#'>

@@ -15,7 +15,7 @@ export const CardItem = ({ itemCategories }) => {
             <a href='!#'>Подробее ></a>
           </div>
         </div>
-        <div>
+        <div className={styles.images}>
           <img src={jetSky} alt='no photos' />
         </div>
       </div>

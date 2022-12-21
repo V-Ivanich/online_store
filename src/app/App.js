@@ -9,20 +9,26 @@ import { PopularGoods } from '../component/popularGoods'
 import { Banner } from '../component/banner'
 import { WhatBay } from '../component/whatTheyBuy'
 import { Footer } from '../component/footer'
+import PagesItems from '../component/pages_2'
 import Container from 'react-bootstrap/Container'
+import { Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
       <Container />
       <Header />
+      <Switch>
+        <Route path='/gidrocikle' component={PagesItems} />
+      </Switch>
+      {/* 
       <Slider />
       <Search />
       <Categories />
       <PopularGoods />
       <Banner />
       <WhatBay />
-      <Footer />
+      <Footer /> */}
       <Container />
     </>
   )
