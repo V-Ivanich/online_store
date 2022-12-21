@@ -1,12 +1,14 @@
 .body_card_item {
   display: flex;
-  max-width: 370px;
+  margin: 5px;
+  width: 370px;
   background-color: #fff;
   height: 129px;
   padding-top: 25px;
   border: 1px solid rgb(244, 240, 240);
   border-radius: 4px;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-content: space-between;
 }
 .text_title {
   display: flex;

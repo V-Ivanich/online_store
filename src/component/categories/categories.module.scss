@@ -1,5 +1,7 @@
 .body_categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
   height: 288px;
-  background-color: cadetblue;
   margin-top: 10px;
 }
