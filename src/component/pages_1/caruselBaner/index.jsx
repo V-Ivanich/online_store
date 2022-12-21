@@ -1,9 +1,9 @@
 import React from 'react'
 import { Carousel, CarouselItem, Container } from 'react-bootstrap'
-import kater from '../../image/Rectangle 55.png'
-import oneImg from '../../image/moto_1.jpg'
-import twoImg from '../../image/moto_2.jpg'
-import theeImg from '../../image/moto_3.jpg'
+import kater from '../../../image/Rectangle 55.png'
+import oneImg from '../../../image/katera.jpg'
+import twoImg from '../../../image/kvadrohod.jpg'
+import theeImg from '../../../image/snegohod.jpg'
 import styles from './carusel.module.scss'
 
 export const Slider = () => {

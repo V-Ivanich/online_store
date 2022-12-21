@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import { CardItem } from './cardItem'
 import styles from './categories.module.scss'
-import categories from '../../dataBase/catalog'
+import categories from '../../../dataBase/catalog'
 import PropTypes from 'prop-types'
 
 export const Categories = () => {

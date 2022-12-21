@@ -1,5 +1,5 @@
 import React from 'react'
-import jetSky from '../../../image/jet_ski_PNG90 1.png'
+import jetSky from '../../../../image/jet_ski_PNG90 1.png'
 import styles from './cardItem.module.scss'
 
 export const CardItem = ({ itemCategories }) => {
