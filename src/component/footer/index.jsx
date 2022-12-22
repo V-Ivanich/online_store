@@ -8,9 +8,21 @@ export const Footer = () => {
             <Container className={styles.body_footer}>
                 <Col></Col>
                 <Col>
-                    <p>Информация</p> О компании Контакты Акции Магазины
+                    <p>Информация</p>
+                    <a href="!#">О компании</a>
+                    <a href="!#">Контакты</a>
+                    <a href="!#">Акции</a>
+                    <a href="!#">Магазины</a>
                 </Col>
-                <Col></Col>
+                <Col>
+                    <div className="">
+                        <p>Интернет-магазин</p>
+                        <a href="!#">Доставка и самовывоз</a>
+                        <a href="!#">Оплата</a>
+                        <a href="!#">Возврат-обмен</a>
+                        <a href="!#">Новости</a>
+                    </div>
+                </Col>
                 <Col></Col>
             </Container>
         </>

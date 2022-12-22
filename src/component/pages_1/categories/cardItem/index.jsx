@@ -13,7 +13,7 @@ export const CardItem = ({ itemCategories }) => {
                         <h3>{nameCategori}</h3>
                     </div>
                     <div>
-                        <a href="!#">Подробее `&gt;`</a>
+                        <a href="!#">Подробее &gt;</a>
                     </div>
                 </div>
                 <div className={styles.images}>
