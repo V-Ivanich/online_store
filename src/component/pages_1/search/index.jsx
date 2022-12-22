@@ -23,7 +23,7 @@ export const Search = () => {
             </a>
           </Col>
         </Row>
-        <Row>
+        <Row className=''>
           <Col className='col-sm-11'>
             <input className='w-100' />
           </Col>

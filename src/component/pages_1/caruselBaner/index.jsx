@@ -4,6 +4,7 @@ import kater from '../../../image/Rectangle 55.png'
 import oneImg from '../../../image/katera.jpg'
 import twoImg from '../../../image/kvadrohod.jpg'
 import theeImg from '../../../image/snegohod.jpg'
+import CardTemplate from '../cardTemplate'
 import styles from './carusel.module.scss'
 
 export const Slider = () => {
@@ -15,32 +16,30 @@ export const Slider = () => {
             <img className='d-block w-100' src={kater} alt='Photo0' />
             <Carousel.Caption>
               <h1>Почувствуй скорость и экстрим</h1>
-              <p>Описание какое то...</p>
             </Carousel.Caption>
           </CarouselItem>
           <CarouselItem className={styles.body_carousel}>
             <img className='d-block w-100' src={oneImg} alt='Photo1' />
             <Carousel.Caption>
-              <h1>Первый слайд</h1>
-              <p>Описание какое то...</p>
+              <h1>Отдыхай и наслаждайся!</h1>
             </Carousel.Caption>
           </CarouselItem>
           <CarouselItem className={styles.body_carousel}>
             <img className='d-block w-100' src={twoImg} alt='Photo2' />
             <Carousel.Caption>
-              <h1>Второй слайд</h1>
-              <p>Описание какое то...</p>
+              <h1>Для тебя нет преград</h1>
             </Carousel.Caption>
           </CarouselItem>
           <CarouselItem className={styles.body_carousel}>
             <img className='d-block w-100' src={theeImg} alt='Photo3' />
             <Carousel.Caption>
-              <h1>Третий слайд</h1>
-              <p>Описание какое то...</p>
+              <h1>И снег не помеха</h1>
             </Carousel.Caption>
           </CarouselItem>
         </Carousel>
-        <div className={styles.baner}></div>
+        <div className={styles.baner}>
+          <CardTemplate />
+        </div>
       </Container>
     </>
   )

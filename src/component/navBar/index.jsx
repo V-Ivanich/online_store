@@ -15,87 +15,85 @@ export const Header = () => {
     <>
       <Container className={styles.container}>
         <Row className={styles.menu}>
-          <Col>
+          <Col className='col-2 d-flex justify-content-center'>
             <Link className='nav-link' to='/shops'>
               Магазины
             </Link>
           </Col>
-          <Col>
+          <Col className='d-flex justify-content-center'>
             <Link className='nav-link' to='/action'>
               Акции
             </Link>
           </Col>
-          <Col>
+          <Col className='col-2 d-flex justify-content-center'>
             <Link className='nav-link' to='/case'>
               Доставка и оплата
             </Link>
           </Col>
-          <Col>
+          <Col className='col-2 d-flex justify-content-center'>
             <img src={logo} alt='noLogo' />
           </Col>
-          <Col>
-            <img src={maps} alt='noLogo' />
+          <Col className='col-3 d-flex justify-content-center'>
             <Link className='nav-link' to='/map'>
+              <img src={maps} alt='noLogo' />
               Москва,ул.Науки 25
             </Link>
           </Col>
-          <Col>
-            <a className='nav-link' href='!#'>
+          {/* <Col></Col>
+          <Col></Col> */}
+          <Col className='col-2 d-flex justify-content-center'>
+            <a className='nav-link ms-3' href='!#'>
               <img src={heart} alt='noLogo' />
             </a>
-          </Col>
-          <Col>
-            <a className='nav-link' href='!#'>
+            <a className='nav-link ms-3' href='!#'>
               <img src={mens} alt='noLogo' />
             </a>
-          </Col>
-          <Col>
-            <a className='nav-link' href='!#'>
+            <a className='nav-link ms-3' href='!#'>
               <img src={basket} alt='noLogo' />
             </a>
           </Col>
         </Row>
 
         <Row className={styles.catalog}>
-          <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+          <Col className='d-flex justify-content-center'>
+            <Link className='nav-link' aria-current='page' to='/'>
               Квадроциклы
-            </a>
+            </Link>
           </Col>
-          <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+          <Col className='d-flex justify-content-center'>
+            <Link className='nav-link' aria-current='page' to='/'>
               Катера
-            </a>
+            </Link>
           </Col>
-          <Col>
+          <Col className='d-flex justify-content-center'>
             <Link className='nav-link' aria-current='page' to='/gidrocikle'>
               Гидроциклы
             </Link>
           </Col>
-          <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+          <Col className='d-flex justify-content-center'>
+            <Link className='nav-link' aria-current='page' to='/'>
               Лодки
-            </a>
+            </Link>
           </Col>
-          <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+          <Col className='d-flex justify-content-center'>
+            <Link className='nav-link' aria-current='page' to='/'>
               Вездеходы
-            </a>
+            </Link>
           </Col>
-          <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+          <Col className='d-flex justify-content-center'>
+            <Link className='nav-link' aria-current='page' to='/'>
               Снегоходы
-            </a>
+            </Link>
           </Col>
-          <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+          <Col className='d-flex justify-content-center'>
+            <Link className='nav-link' aria-current='page' to='/'>
               Двигатели
-            </a>
+            </Link>
           </Col>
-          <Col>
-            <a className='nav-link' aria-current='page' href='!#'>
+          <Col className='d-flex justify-content-center'>
+            <Link className='nav-link' aria-current='page' to='/'>
               Запчасти
-            </a>
+            </Link>
           </Col>
         </Row>
       </Container>
