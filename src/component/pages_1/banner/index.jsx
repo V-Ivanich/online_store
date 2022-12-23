@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./banner.module.scss";
 import motoBlue2 from "../../../image/CFMOTO-X6-EPS_blue 2.png";
-import motoBlue1 from "../../../image/2018-Maverick-TURBO-Blue_2.png";
+import motoBlue1 from "../../../image/kvadrocikl.png";
 
 export const Banner = () => {
     const style1 = styles.center_div + " " + styles.justi_end;

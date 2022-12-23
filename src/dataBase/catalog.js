@@ -1,10 +1,15 @@
 const categoriesList = [
-    { id: "1", name: "Квадроциклы", image: "", links: "" },
-    { id: "2", name: "Гидроциклы", image: "", links: "" },
-    { id: "3", name: "Катера", image: "", links: "" },
-    { id: "4", name: "Снегоходы", image: "", links: "" },
-    { id: "5", name: "Вездеходы", image: "", links: "" },
-    { id: "6", name: "Двигатели", image: "", links: "" }
+    {
+        id: "1",
+        name: "Квадроциклы",
+        image: "./image/kvadrocikl.png",
+        links: ""
+    },
+    { id: "2", name: "Гидроциклы", image: "./image/gidrocikl.png", links: "" },
+    { id: "3", name: "Катера", image: "./image/katera.png", links: "" },
+    { id: "4", name: "Снегоходы", image: "./image/snego.png", links: "" },
+    { id: "5", name: "Вездеходы", image: "./image/vezdehod.png", links: "" },
+    { id: "6", name: "Двигатели", image: "./image/drive.png", links: "" }
 ];
 const description = [{ id: "1", marks: "toyota" }];
 const goods = [
@@ -15,7 +20,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "",
+        images: "./image/gidrokos.png",
         rate: 33
     },
     {
@@ -25,7 +30,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "",
+        images: "./image/mafon.png",
         rate: 11
     },
     {
@@ -35,7 +40,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "",
+        images: "./image/verovka.png",
         rate: 2
     },
     {
@@ -45,7 +50,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "",
+        images: "./image/binokl.png",
         rate: 7
     },
     {
@@ -55,7 +60,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "",
+        images: "./image/jilet.png",
         rate: 20
     },
     {
@@ -65,7 +70,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "",
+        images: "./image/rukzak.png",
         rate: 25
     }
 ];

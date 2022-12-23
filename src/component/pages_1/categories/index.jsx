@@ -26,7 +26,7 @@ export const Categories = () => {
                 {catalog.map((itemCategori) => (
                     <CardItem
                         key={itemCategori.name}
-                        itemCategories={itemCategori.name}
+                        itemCategories={itemCategori}
                     />
                 ))}
             </Container>
