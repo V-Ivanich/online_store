@@ -6,7 +6,7 @@ import categories from "../../../dataBase/catalog";
 import PropTypes from "prop-types";
 
 export const Categories = () => {
-    console.log(categories.categoriesList);
+    console.log("categories-", categories.categoriesList);
     const [catalog, setCatalog] = useState();
     useEffect(() => {
         categories.fetchCategories().then((data) => setCatalog(data));

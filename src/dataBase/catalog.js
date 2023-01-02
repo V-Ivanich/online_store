@@ -1,15 +1,53 @@
+import kvadro from "../image/kvadrocikl.png";
+import gidrocikl from "../image/gidrocikl.png";
+import katera from "../image/katera.png";
+import snego from "../image/snego.png";
+import vezdehod from "../image/vezdehod.png";
+import drive from "../image/drive.png";
+import gidrokos from "../image/gidrokos.png";
+import mafon from "../image/mafon.png";
+import verovka from "../image/verovka.png";
+import binokl from "../image/binokl.png";
+import jilet from "../image/jilet.png";
+import rukzak from "../image/rukzak.png";
+
 const categoriesList = [
     {
         id: "1",
         name: "Квадроциклы",
-        image: "./image/kvadrocikl.png",
+        image: kvadro,
         links: ""
     },
-    { id: "2", name: "Гидроциклы", image: "image/gidrocikl.png", links: "" },
-    { id: "3", name: "Катера", image: "image/katera.png", links: "" },
-    { id: "4", name: "Снегоходы", image: "image/snego.png", links: "" },
-    { id: "5", name: "Вездеходы", image: "image/vezdehod.png", links: "" },
-    { id: "6", name: "Двигатели", image: "image/drive.png", links: "" }
+    {
+        id: "2",
+        name: "Гидроциклы",
+        image: gidrocikl,
+        links: ""
+    },
+    {
+        id: "3",
+        name: "Катера",
+        image: katera,
+        links: ""
+    },
+    {
+        id: "4",
+        name: "Снегоходы",
+        image: snego,
+        links: ""
+    },
+    {
+        id: "5",
+        name: "Вездеходы",
+        image: vezdehod,
+        links: ""
+    },
+    {
+        id: "6",
+        name: "Двигатели",
+        image: drive,
+        links: ""
+    }
 ];
 // const description = [{ id: "1", marks: "toyota" }];
 const goods = [
@@ -20,7 +58,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "image/gidrokos.png",
+        images: gidrokos,
         rate: 33
     },
     {
@@ -30,7 +68,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "image/mafon.png",
+        images: mafon,
         rate: 11
     },
     {
@@ -40,7 +78,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "image/verovka.png",
+        images: verovka,
         rate: 2
     },
     {
@@ -50,7 +88,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "image/binokl.png",
+        images: binokl,
         rate: 7
     },
     {
@@ -60,7 +98,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "image/jilet.png",
+        images: jilet,
         rate: 20
     },
     {
@@ -70,7 +108,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "image/rukzak.png",
+        images: rukzak,
         rate: 25
     }
 ];

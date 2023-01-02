@@ -3,7 +3,7 @@ import styles from "./cardItem.module.scss";
 import PropTypes from "prop-types";
 
 export const CardItem = ({ itemCategories }) => {
-    console.log(itemCategories);
+    console.log("CardItem-", itemCategories.image);
     return (
         <>
             <div className={styles.body_card_item}>
