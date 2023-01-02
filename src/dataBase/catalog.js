@@ -5,13 +5,13 @@ const categoriesList = [
         image: "./image/kvadrocikl.png",
         links: ""
     },
-    { id: "2", name: "Гидроциклы", image: "./image/gidrocikl.png", links: "" },
-    { id: "3", name: "Катера", image: "./image/katera.png", links: "" },
-    { id: "4", name: "Снегоходы", image: "./image/snego.png", links: "" },
-    { id: "5", name: "Вездеходы", image: "./image/vezdehod.png", links: "" },
-    { id: "6", name: "Двигатели", image: "./image/drive.png", links: "" }
+    { id: "2", name: "Гидроциклы", image: "image/gidrocikl.png", links: "" },
+    { id: "3", name: "Катера", image: "image/katera.png", links: "" },
+    { id: "4", name: "Снегоходы", image: "image/snego.png", links: "" },
+    { id: "5", name: "Вездеходы", image: "image/vezdehod.png", links: "" },
+    { id: "6", name: "Двигатели", image: "image/drive.png", links: "" }
 ];
-const description = [{ id: "1", marks: "toyota" }];
+// const description = [{ id: "1", marks: "toyota" }];
 const goods = [
     {
         id: "1",
@@ -20,7 +20,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "./image/gidrokos.png",
+        images: "image/gidrokos.png",
         rate: 33
     },
     {
@@ -30,7 +30,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "./image/mafon.png",
+        images: "image/mafon.png",
         rate: 11
     },
     {
@@ -40,7 +40,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "./image/verovka.png",
+        images: "image/verovka.png",
         rate: 2
     },
     {
@@ -50,7 +50,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "./image/binokl.png",
+        images: "image/binokl.png",
         rate: 7
     },
     {
@@ -60,7 +60,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "./image/jilet.png",
+        images: "image/jilet.png",
         rate: 20
     },
     {
@@ -70,7 +70,7 @@ const goods = [
         likes: false,
         sale: false,
         basket: false,
-        images: "./image/rukzak.png",
+        images: "image/rukzak.png",
         rate: 25
     }
 ];
