@@ -1,5 +1,5 @@
 import React from "react";
-import drive from "../../../image/motor.png";
+import drive from "../../image/motor.png";
 
 const CardTemplate = () => {
     return (

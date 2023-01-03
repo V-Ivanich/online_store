@@ -4,12 +4,13 @@ import verovka from "../image/verovka.png";
 import binokl from "../image/binokl.png";
 import jilet from "../image/jilet.png";
 import rukzak from "../image/rukzak.png";
+import drive from "../image/motor.png";
 
 const goods = [
     {
         id: "1",
-        name: "",
-        price: 170000,
+        name: "Мужской костюм 3мм",
+        price: 7000,
         likes: false,
         sale: false,
         basket: false,
@@ -18,8 +19,8 @@ const goods = [
     },
     {
         id: "2",
-        name: "",
-        price: 50000,
+        name: "BRP Audio-портативная система",
+        price: 0,
         likes: false,
         sale: false,
         basket: false,
@@ -28,8 +29,8 @@ const goods = [
     },
     {
         id: "3",
-        name: "",
-        price: 120400,
+        name: "Спасательное снаряжение",
+        price: 0,
         likes: false,
         sale: false,
         basket: false,
@@ -38,8 +39,8 @@ const goods = [
     },
     {
         id: "4",
-        name: "",
-        price: 1000,
+        name: "BRP Audio-Premium System",
+        price: 68000,
         likes: false,
         sale: false,
         basket: false,
@@ -48,7 +49,7 @@ const goods = [
     },
     {
         id: "5",
-        name: "",
+        name: "Спасательный жилет BRP Men's Airflow PFD",
         price: 6900,
         likes: false,
         sale: false,
@@ -58,8 +59,8 @@ const goods = [
     },
     {
         id: "6",
-        name: "",
-        price: 8150,
+        name: "Водонепроницаемый Рюкзак",
+        price: 9800,
         likes: false,
         sale: false,
         basket: false,
@@ -72,9 +73,10 @@ const goods = [
         brand: "Suzuki DF9.9BRS",
         price: 225000,
         likes: false,
-        sale: false,
+        sale: 15.6,
+        mark: true,
         basket: false,
-        images: rukzak,
+        images: drive,
         rate: 25
     }
 ];

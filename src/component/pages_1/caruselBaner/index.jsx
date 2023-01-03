@@ -4,10 +4,12 @@ import kater from "../../../image/Rectangle 55.png";
 import oneImg from "../../../image/katera.jpg";
 import twoImg from "../../../image/kvadrohod.jpg";
 import theeImg from "../../../image/snegohod.jpg";
-import CardTemplate from "../cardTemplate";
+import CardTemplate from "../../cardTemplate";
 import styles from "./carusel.module.scss";
+import PropTypes from "prop-types";
 
-export const Slider = () => {
+export const Slider = ({ sale }) => {
+    console.log(sale);
     return (
         <>
             <Container className={styles.baner_carousel}>
@@ -65,4 +67,7 @@ export const Slider = () => {
             </Container>
         </>
     );
+};
+Slider.propTypes = {
+    sale: PropTypes.array.isRequired
 };
