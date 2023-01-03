@@ -17,7 +17,7 @@ const CardTemplate = () => {
                 <p className="card-text text-center m-0">Лодочный мотор</p>
                 <p className="card-text text-center m-0">Suzuki DF9.9BRS</p>
                 <div className="card-body p-3">
-                    <p className="text-center m-1">Акция действует до</p>
+                    <h5 className="text-center m-1">Акция действует до</h5>
                     <h5 className="card-title text-center">31.08.2020</h5>
                 </div>
             </div>

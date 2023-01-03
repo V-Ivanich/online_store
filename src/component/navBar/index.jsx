@@ -39,8 +39,6 @@ export const Header = () => {
                             Москва,ул.Науки 25
                         </Link>
                     </Col>
-                    {/* <Col></Col>
-          <Col></Col> */}
                     <Col className="col-2 d-flex justify-content-center">
                         <a className="nav-link ms-3" href="!#">
                             <img src={heart} alt="noLogo" />
