@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./popularGoods.module.scss";
+import PropTypes from "prop-types";
+import CardTemplate from "../../cardTemplate";
 
-export const PopularGoods = () => {
+export const PopularGoods = ({ popular }) => {
     return (
         <>
             <Container className={styles.body_popular}>
@@ -32,9 +34,11 @@ export const PopularGoods = () => {
                     </div>
                 </Row>
                 <Row>
-                    <Col className="col-12">
-                        <div></div>
-                    </Col>
+                    {popular.map((item) => (
+                        <Col className="col-3" key={item.id}>
+                            <CardTemplate dataItem={item} />
+                        </Col>
+                    ))}
                 </Row>
                 <Row>
                     <div className="d-flex justify-content-center">
@@ -46,4 +50,7 @@ export const PopularGoods = () => {
             </Container>
         </>
     );
+};
+PopularGoods.propTypes = {
+    popular: PropTypes.array.isRequired
 };

@@ -5,7 +5,7 @@ import snego from "../../image/snego.png";
 import vezdehod from "../../image/vezdehod.png";
 import drive from "../../image/drive.png";
 
-const categoriesList = [
+export const categoriesList = [
     {
         id: "1",
         name: "Квадроциклы",
@@ -43,12 +43,13 @@ const categoriesList = [
         links: ""
     }
 ];
-
 const fetchCategories = () =>
     new Promise((resolve) => {
         window.setTimeout(function () {
             resolve(categoriesList);
-        }, 1000);
+        }, 2000);
     });
 
-export default { fetchCategories };
+export default {
+    fetchCategories
+};
