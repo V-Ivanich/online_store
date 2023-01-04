@@ -8,7 +8,7 @@ import CardTemplate from "../../cardTemplate";
 import styles from "./carusel.module.scss";
 import PropTypes from "prop-types";
 
-export const Slider = ({ sale }) => {
+export const CaruselBaner = ({ sale }) => {
     console.log("sale-", sale);
     return (
         <>
@@ -62,12 +62,12 @@ export const Slider = ({ sale }) => {
                     </CarouselItem>
                 </Carousel>
                 <div className={styles.baner}>
-                    <CardTemplate sale={sale} />
+                    <CardTemplate dataItem={sale} />
                 </div>
             </Container>
         </>
     );
 };
-Slider.propTypes = {
-    sale: PropTypes.array.isRequired
+CaruselBaner.propTypes = {
+    sale: PropTypes.object.isRequired
 };

@@ -1,10 +1,10 @@
-import gidrokos from "../image/gidrokos.png";
-import mafon from "../image/mafon.png";
-import verovka from "../image/verovka.png";
-import binokl from "../image/binokl.png";
-import jilet from "../image/jilet.png";
-import rukzak from "../image/rukzak.png";
-import drive from "../image/motor.png";
+import gidrokos from "../../image/gidrokos.png";
+import mafon from "../../image/mafon.png";
+import verovka from "../../image/verovka.png";
+import binokl from "../../image/binokl.png";
+import jilet from "../../image/jilet.png";
+import rukzak from "../../image/rukzak.png";
+import drive from "../../image/motor.png";
 
 const goods = [
     {
@@ -90,7 +90,7 @@ const fetchGoods = () =>
     new Promise((resolve) => {
         window.setTimeout(function () {
             resolve(goods);
-        }, 1000);
+        }, 2000);
     });
 
 export default { fetchGoods };

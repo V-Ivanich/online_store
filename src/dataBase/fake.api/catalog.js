@@ -1,9 +1,9 @@
-import kvadro from "../image/kvadrocikl.png";
-import gidrocikl from "../image/gidrocikl.png";
-import katera from "../image/katera.png";
-import snego from "../image/snego.png";
-import vezdehod from "../image/vezdehod.png";
-import drive from "../image/drive.png";
+import kvadro from "../../image/kvadrocikl.png";
+import gidrocikl from "../../image/gidrocikl.png";
+import katera from "../../image/katera.png";
+import snego from "../../image/snego.png";
+import vezdehod from "../../image/vezdehod.png";
+import drive from "../../image/drive.png";
 
 const categoriesList = [
     {
@@ -48,7 +48,7 @@ const fetchCategories = () =>
     new Promise((resolve) => {
         window.setTimeout(function () {
             resolve(categoriesList);
-        }, 2000);
+        }, 1000);
     });
 
 export default { fetchCategories };

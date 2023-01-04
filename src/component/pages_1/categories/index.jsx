@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
 import { CardItem } from "./cardItem";
 import styles from "./categories.module.scss";
-import categories from "../../../dataBase/catalog";
 import PropTypes from "prop-types";
 
-export const Categories = () => {
-    const [catalog, setCatalog] = useState();
-
-    useEffect(() => {
-        categories.fetchCategories().then((data) => setCatalog(data));
-        console.log("categories-", categories.categoriesList);
-    }, []);
-    if (!catalog) {
+export const Categories = ({ catalogs }) => {
+    if (!catalogs) {
         return (
             <div className="d-flex justify-content-center">
                 <div className="spinner-border text-info" role="status">
@@ -24,7 +17,7 @@ export const Categories = () => {
     return (
         <>
             <Container className={styles.body_categories}>
-                {catalog.map((itemCategori) => (
+                {catalogs.map((itemCategori) => (
                     <CardItem
                         key={itemCategori.name}
                         itemCategorie={itemCategori}
@@ -35,6 +28,6 @@ export const Categories = () => {
     );
 };
 Categories.propTypes = {
-    catalog: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+    catalogs: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     itemCategorie: PropTypes.object
 };
