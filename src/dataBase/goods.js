@@ -12,7 +12,8 @@ const goods = [
         name: "Мужской костюм 3мм",
         price: 7000,
         likes: false,
-        sale: false,
+        sale: 0,
+        mark: false,
         basket: false,
         images: gidrokos,
         rate: 33
@@ -22,7 +23,8 @@ const goods = [
         name: "BRP Audio-портативная система",
         price: 0,
         likes: false,
-        sale: false,
+        sale: 0,
+        mark: false,
         basket: false,
         images: mafon,
         rate: 11
@@ -32,7 +34,8 @@ const goods = [
         name: "Спасательное снаряжение",
         price: 0,
         likes: false,
-        sale: false,
+        sale: 0,
+        mark: false,
         basket: false,
         images: verovka,
         rate: 2
@@ -42,7 +45,8 @@ const goods = [
         name: "BRP Audio-Premium System",
         price: 68000,
         likes: false,
-        sale: false,
+        sale: 0,
+        mark: false,
         basket: false,
         images: binokl,
         rate: 7
@@ -52,7 +56,8 @@ const goods = [
         name: "Спасательный жилет BRP Men's Airflow PFD",
         price: 6900,
         likes: false,
-        sale: false,
+        sale: 0,
+        mark: false,
         basket: false,
         images: jilet,
         rate: 20
@@ -62,7 +67,8 @@ const goods = [
         name: "Водонепроницаемый Рюкзак",
         price: 9800,
         likes: false,
-        sale: false,
+        sale: 0,
+        mark: false,
         basket: false,
         images: rukzak,
         rate: 25
@@ -80,5 +86,11 @@ const goods = [
         rate: 25
     }
 ];
+const fetchGoods = () =>
+    new Promise((resolve) => {
+        window.setTimeout(function () {
+            resolve(goods);
+        }, 1000);
+    });
 
-export default goods;
+export default { fetchGoods };

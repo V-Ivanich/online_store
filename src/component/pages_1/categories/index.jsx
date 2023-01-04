@@ -6,10 +6,11 @@ import categories from "../../../dataBase/catalog";
 import PropTypes from "prop-types";
 
 export const Categories = () => {
-    console.log("categories-", categories.categoriesList);
     const [catalog, setCatalog] = useState();
+
     useEffect(() => {
         categories.fetchCategories().then((data) => setCatalog(data));
+        console.log("categories-", categories.categoriesList);
     }, []);
     if (!catalog) {
         return (
@@ -34,5 +35,6 @@ export const Categories = () => {
     );
 };
 Categories.propTypes = {
-    catalog: PropTypes.oneOfType([PropTypes.object, PropTypes.array])
+    catalog: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+    itemCategorie: PropTypes.object
 };

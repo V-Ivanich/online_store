@@ -1,7 +1,9 @@
 import React from "react";
 import drive from "../../image/motor.png";
+import PropTypes from "prop-types";
 
-const CardTemplate = () => {
+const CardTemplate = ({ sale }) => {
+    console.log("card", sale);
     return (
         <>
             <div className="card">
@@ -23,6 +25,9 @@ const CardTemplate = () => {
             </div>
         </>
     );
+};
+CardTemplate.propTypes = {
+    sale: PropTypes.array.isRequired
 };
 
 export default CardTemplate;

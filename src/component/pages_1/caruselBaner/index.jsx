@@ -9,7 +9,7 @@ import styles from "./carusel.module.scss";
 import PropTypes from "prop-types";
 
 export const Slider = ({ sale }) => {
-    console.log(sale);
+    console.log("sale-", sale);
     return (
         <>
             <Container className={styles.baner_carousel}>
@@ -62,7 +62,7 @@ export const Slider = ({ sale }) => {
                     </CarouselItem>
                 </Carousel>
                 <div className={styles.baner}>
-                    <CardTemplate />
+                    <CardTemplate sale={sale} />
                 </div>
             </Container>
         </>
