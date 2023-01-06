@@ -36,14 +36,19 @@
 
 .next_btn,
 .prev_btn {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
   width: 30px;
-  align-items: center;
 }
 
-svg {
+.absolute_btn {
+  position: absolute;
+  top: 45%;
+}
+
+.prev_position {
+  left: -26px;
+}
+i {
   fill: #000;
-  height: 30px;
-  width: 30px;
+  font-size: 2rem;
 }
