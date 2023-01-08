@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Container } from "react-bootstrap";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,49 +12,67 @@ import foto from "../../../image/kvadrocikl.png";
 export const WhatBay = () => {
     return (
         <>
-            <Container className="d-flex mt-2 justify-content-centr">
-                <Swiper
-                    slidesPerView={3}
-                    spaceBetween={30}
-                    slidesPerGroup={3}
-                    loop={true}
-                    loopFillGroupWithBlank={true}
-                    pagination={{
-                        clickable: true
-                    }}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
-                    className="mySwiper"
-                >
+            <Swiper
+                slidesPerView={4}
+                spaceBetween={30}
+                slidesPerGroup={3}
+                loop={true}
+                loopFillGroupWithBlank={true}
+                pagination={{
+                    clickable: true
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+            >
+                <div className="swiper-wrapper">
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                        <img src={foto} alt="no" />
+                        <div className="images">
+                            <img src={foto} alt="no" />
+                        </div>
                     </SwiperSlide>
-                </Swiper>
-            </Container>
+                </div>
+            </Swiper>
         </>
     );
 };
