@@ -1,0 +1,26 @@
+.back_col {
+  margin: 10px 0px;
+  background-color: rgb(88, 81, 42);
+  display: flex;
+  justify-content: center;
+}
+.mySwiper {
+  .swiper_slide {
+    position: relative;
+
+    .images {
+      width: 100%;
+      padding-top: 65%;
+      overflow: hidden;
+      position: relative;
+
+      .slide_image {
+        position: absolute;
+        gap: 10px;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
